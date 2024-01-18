@@ -1,40 +1,69 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<title>IT Sec: Network Security</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/simple.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section id="first" data-background-image="./img/bg3.jpg">
+				<img class="uni" src="./img/hslogo.png">
+				<div class="title">
+					<h3 class="author-name">Digitalisierung, Innovation und Informationsmanagement</h3>
+					<div style="font-size: 22px;">Master of Science</div>
+					<div style="font-size: 22px;"> IT-Sicherheit</div>
+					<div class="author" style="text-align: center;">Network Security</div>
+					<div class="author">
+						<div class="author-name">von<br> Lucien Siani </div> <br>
+						<ul>
+							<li>Prüfer:&ensp;&ensp;&ensp;Prof. Dr. Lars Fischer</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>Slide 2</section>
+			<section>
+				<div id="agenda">
+					<div>
+						<h3>Agenda</h3>
+						<ul>
+							<li class="fragment" id="list-item"">Definition of Network and its components</li>
+								<li class=" fragment" id="list-item"">Why security in a Network matter</li>
+								<li class=" fragment" id="list-item"">Network Security mechanism</li>
+								<li class=" fragment" id="list-item"">Home Network: Example of securing a network</li>
+							</ul>
+						</div>
+						<img src=" /img/network.jpg" alt="example of network" width="300" height="400">
+					</div>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		Reveal.initialize({
+			hash: true,
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
 </html>
