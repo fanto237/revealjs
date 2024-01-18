@@ -20,11 +20,93 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: 'Inter', sans-serif;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, main, menu, nav, section {
   display: block;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#first * {
+  color: rgb(33, 32, 32);
+  font-weight: bold;
+}
+
+#agenda {
+  display: flex;
+  gap: 12px
+}
+
+#agenda-item {
+  font-size: xx-large;
+}
+
+.logo {
+  content: "";
+  clear: both;
+}
+
+img.logo {
+  float: left;
+}
+
+.author {
+  font-size: 22px;
+  margin-top: 1em;
+  border-top: 4px solid;
+  border-color: #07ace7;
+  text-align: center;
+}
+
+section img {
+  width: 30%;
+
+}
+
+img.uni {
+  position: absolute;
+  top: -10rem;
+  left: -5rem;
+}
+
+img.dst {
+  float: right;
+  width: 400px;
+  height: 80px;
+  padding-top: 20px;
+}
+
+.header-title {
+  width: auto;
+  background-color: #07ace7;
+  float: right;
+  font-size: 20px;
+  color: #fff;
+  margin-right: -8em;
+}
+
+.section-title {
+  font-size: 50px;
+  float: left;
+}
+
+.header-title {
+  width: auto;
+  background-color: #07ace7;
+  float: right;
+  font-size: 20px;
+  color: #fff;
+  margin-right: -8em;
+}
+
+section div.title {
+  display: flex;
+  flex-direction: column;
 }
