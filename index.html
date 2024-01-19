@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
-	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/theme/simple.css">
 
 	<!-- Theme used for syntax highlighted code -->
@@ -21,40 +21,83 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section id="first" data-background-image="./img/bg3.jpg">
-				<img class="uni" src="./img/hslogo.png">
+			<!-- first page: presentation -->
+			<section id="first" data-background-image="./img/bg5.jpg">
+				<!-- <img class="logo" alt="hs bremerhaven logo" src="./img/hslogo.png"> -->
 				<div class="title">
-					<h3 class="author-name">Digitalisierung, Innovation und Informationsmanagement</h3>
-					<div style="font-size: 22px;">Master of Science</div>
-					<div style="font-size: 22px;"> IT-Sicherheit</div>
-					<div class="author" style="text-align: center;">Network Security</div>
+					<h3>Digitalisierung, Innovation und Informationsmanagement</h3>
+					<span style="font-size: 22px;">Master of Science</span>
+					<span style="font-size: 22px; margin-bottom: 10px;"> IT-Sicherheit</span>
+					<span class="author">Network Security</span>
 					<div class="author">
-						<div class="author-name">von<br> Lucien Siani </div> <br>
-						<ul>
+						<span>von<br> Lucien Siani </span> <br>
+						<ul style="margin-top: 2rem;">
 							<li>Prüfer:&ensp;&ensp;&ensp;Prof. Dr. Lars Fischer</li>
 						</ul>
 					</div>
 				</div>
 			</section>
-			<section>Slide 2</section>
-			<section>
-				<div id="agenda">
-					<div>
-						<h3>Agenda</h3>
-						<ul>
-							<li class="fragment" id="list-item"">Definition of Network and its components</li>
-								<li class=" fragment" id="list-item"">Why security in a Network matter</li>
-								<li class=" fragment" id="list-item"">Network Security mechanism</li>
-								<li class=" fragment" id="list-item"">Home Network: Example of securing a network</li>
-							</ul>
-						</div>
-						<img src=" /img/network.jpg" alt="example of network" width="300" height="400">
+
+			<!-- second page: agenda -->
+			<section id="toc" class="simple" data-background-color="#14084a">
+				<div class="container-container">
+					<h3 id="page-title"><i class="arrow right"></i>Tablet of content</h3>
+					<div id="container">
+						<ol>
+							<li class="fragment" id="list-item">Networks and their Components</li>
+							<li class="fragment" id="list-item">The Vital Role of Security in Networks</li>
+							<li class="fragment" id="list-item">Essential Mechanisms for Network Security</li>
+							<li class="fragment" id="list-item">Securing Your Haven: Examples of Home Network Security</li>
+						</ol>
+						<img src="img/network.jpg" alt="switches" width="">
 					</div>
+					<div class="footer">
+						<span>Hochschule bremerhaven</span>
+						<span>|</span>
+						<span>Siani Lucien</span>
+						<span>|</span>
+						<span>31.01.2023</span>
+					</div>
+				</div>
 			</section>
+
+			<!-- third page: definition of network -->
+			<section id="network" class="simple" data-background-color="#14084a">
+				<div class="container-container">
+					<h3 id="page-title"><i class="arrow right"></i>Network and their Components</h3>
+					<div id="container">
+					</div>
+					<div class="footer">
+						<span>Hochschule bremerhaven</span>
+						<span>|</span>
+						<span>Siani Lucien</span>
+						<span>|</span>
+						<span>31.01.2023</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- template for each section -->
+			<section id="#" class="simple" data-background-color="#14084a">
+				<div class="container-container">
+					<h3 id="page-title"><i class="arrow right"></i>Tablet of content</h3>
+					<div id="container">
+					</div>
+					<div class="footer">
+						<span>Hochschule bremerhaven</span>
+						<span>|</span>
+						<span>Siani Lucien</span>
+						<span>|</span>
+						<span>31.01.2023</span>
+					</div>
+				</div>
+			</section>
+
 		</div>
 	</div>
 
-	<script src="dist/reveal.js"></script>
+	<script src=" dist/reveal.js">
+	</script>
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
