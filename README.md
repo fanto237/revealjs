@@ -1,6 +1,6 @@
 # Revealjs
 
-This is a fork of the [reveal](https://github.com/hakimel/revealjs.git) which i modify and adapt to suit my need for my presentation.
+This is a fork of the [revealjs](https://github.com/hakimel/revealjs.git) which i modify and adapt to suit my need for my presentation.
 
 ## Table of Contents
 - [Revealjs](#revealjs)
