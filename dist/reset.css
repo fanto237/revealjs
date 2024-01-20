@@ -107,6 +107,7 @@ menu,
 nav {
   display: block;
 }
+
 body {
   height: 100vh;
 }
@@ -150,7 +151,7 @@ li {
 .title {
   display: flex;
   flex-direction: column;
-    justify-content: end;
+  justify-content: end;
 }
 
 /* hs logo styling */
@@ -197,8 +198,23 @@ img.logo {
   -webkit-transform: rotate(-45deg);
 }
 
-/*
-.higher-div {
-  width: 100%;
-  height: 100%;
-} */
+.stand-out {
+  background-color: #07ace7;
+  padding: 0px 5px;
+}
+
+.fragment.blur {
+  filter: blur(10px);
+}
+
+.fragment.blur.visible {
+  filter: none;
+}
+
+.fragment.box {
+  background-color: #69639c;
+}
+
+.fragment.box.visible {
+  background-color: #07ace7;
+}
