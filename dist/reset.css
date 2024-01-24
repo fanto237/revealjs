@@ -116,6 +116,9 @@ body div {
   height: inherit;
 }
 
+h3 {
+  margin: 0;
+}
 body * {
   margin: 0;
 }
@@ -171,7 +174,7 @@ img.logo {
 }
 
 #list-item {
-  font-size: x-large;
+  font-size: 1.38rem;
   padding: 10px 0;
 }
 
