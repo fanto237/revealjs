@@ -14,7 +14,7 @@
 
 
 	<!-- add icon to the presentation -->
-	<link rel="icon" href="img/icon.ico">
+	<link rel="icon" href="assets/icon.ico">
 
 
 	<!-- Theme used for syntax highlighted code -->
@@ -25,10 +25,10 @@
 
 <body>
 	<div class="reveal">
-		<div class="slides">
+		<div class="slides" style="width: 1200px;">
 			<!-- first page: presentation -->
-			<section id="first" data-background-image="./img/bg5.jpg">
-				<!-- <img class="logo" alt="hs Bremerhaven logo" src="./img/hslogo.png"> -->
+			<section id="first" data-background-image="./assets/bg5.jpg">
+				<!-- <img class="logo" alt="hs Bremerhaven logo" src="./assets/hslogo.png"> -->
 				<div class="title">
 					<h3>Digitalisierung, Innovation und Informationsmanagement</h3>
 					<span style="font-size: 22px;">Master of Science</span>
@@ -49,19 +49,24 @@
 					<h3 id="page-title" style="margin: 0;"><i class="arrow right"></i>Tablet of content</h3>
 					<div id="container" style="gap: 1.25rem;">
 						<ol>
-							<li style="border-bottom: 2px solid #07ace7; margin: 0 0 1rem 0;" class="fragment" id="list-item">
+							<li style="border-bottom: 2px solid #07ace7; margin: 0 0 1rem 0;" class="fragment"
+								id="list-item">
 								Networks and their Components</li>
-							<li style="border-bottom: 2px solid #07ace7; margin: 0 0 1rem 0;" class="fragment" id="list-item">The
+							<li style="border-bottom: 2px solid #07ace7; margin: 0 0 1rem 0;" class="fragment"
+								id="list-item">The
 								Vital Role of Security in Networks</li>
-								<li style="border-bottom: 2px solid #07ace7; margin: 0 0 1rem 0;" class="fragment" id="list-item">Network vulnerabilities
-									</li>
-							<li style="border-bottom: 2px solid #07ace7; margin: 0 0 1rem 0;" class="fragment" id="list-item">
+							<li style="border-bottom: 2px solid #07ace7; margin: 0 0 1rem 0;" class="fragment"
+								id="list-item">Network vulnerabilities
+							</li>
+							<li style="border-bottom: 2px solid #07ace7; margin: 0 0 1rem 0;" class="fragment"
+								id="list-item">
 								Essential Mechanisms for Network Security</li>
-							<li style="border-bottom: 2px solid #07ace7; margin: 0 0 1rem 0;" class="fragment" id="list-item">
+							<li style="border-bottom: 2px solid #07ace7; margin: 0 0 1rem 0;" class="fragment"
+								id="list-item">
 								Securing Your Haven: Examples of Home Network Security
 							</li>
 						</ol>
-						<img src="img/network.jpg" alt="switches" width="550px" height="420px">
+						<img src="assets/network.jpg" alt="switches" width="550px" height="420px">
 					</div>
 					<div class="footer">
 						<span>Hochschule Bremerhaven</span>
@@ -129,31 +134,33 @@
 					<div id="container"
 						style="display: grid; grid-template-columns: repeat(3, 1fr);place-items: center;">
 						<p style="font-size: small; text-align: center; width: 10rem; border-radius: 5px;"
-							class="fragment custom box"><img src="img/components/responsive.png" alt="internet devices">
+							class="fragment custom box"><img src="assets/components/responsive.png"
+								alt="internet devices">
 							<br>Devices
 						</p>
 						<p style="font-size: small; text-align: center; width: 10rem; border-radius: 5px;"
-							class="fragment custom box"><img src="img/components/signal.png"
+							class="fragment custom box"><img src="assets/components/signal.png"
 								alt="connection"><br>Connection Medium </p>
 						<p style="font-size: small; text-align: center; width: 10rem; border-radius: 5px;"
-							class="fragment custom box"><img src="img/components/ip-address.png"
+							class="fragment custom box"><img src="assets/components/ip-address.png"
 								alt="ip address"><br>Protocol </p>
 						<p style="font-size: small; text-align: center; width: 10rem; border-radius: 5px;"
-							class="fragment custom box"><img src="img/components/network-switch.png"
+							class="fragment custom box"><img src="assets/components/network-switch.png"
 								alt="network switch"><br>Switches </p>
 						<p style="font-size: small; text-align: center; width: 10rem; border-radius: 5px;"
-							class="fragment custom box"><img src="img/components/wireless-router.png"
+							class="fragment custom box"><img src="assets/components/wireless-router.png"
 								alt="home router"><br>Routers </p>
 						<p style="font-size: small; text-align: center; width: 10rem; border-radius: 5px;"
-							class="fragment custom box"><img src="img/components/protection.png"
+							class="fragment custom box"><img src="assets/components/protection.png"
 								alt="firewall"><br>Firewalls </p>
 						<p style="font-size: small; text-align: center; width: 10rem; border-radius: 5px;"
-							class="fragment custom box"><img src="img/components/internet.png"
+							class="fragment custom box"><img src="assets/components/internet.png"
 								alt="access point"><br>Acess Points </p>
 						<p style="font-size: small; text-align: center; width: 10rem; border-radius: 5px;"
-							class="fragment custom box"><img src="img/components/modem.png" alt="modem"><br>Modem </p>
+							class="fragment custom box"><img src="assets/components/modem.png" alt="modem"><br>Modem
+						</p>
 						<p style="font-size: small; text-align: center; width: 10rem; border-radius: 5px;"
-							class="fragment custom box"><img src="img/components/usb-cable.png"
+							class="fragment custom box"><img src="assets/components/usb-cable.png"
 								alt="usb cable"><br>Cables and connectors </p>
 					</div>
 					<div class="footer">
@@ -175,62 +182,60 @@
 ">
 						<div class="fragment fade-in"
 							style="height: 12.5rem; display: flex; flex-direction: column; align-items: flex-start; width: 12.5rem; justify-content: flex-start; column-gap: 0px;">
-							<img src="img/role/private-message.png" alt="just a test" style="margin: 0;">
-							<h5 style="font-size: 1.5rem; text-transform: uppercase; font-weight: bold; margin: 10px 0;">
-								Confidentiality</h5>
-							<p style="font-size: 0.8rem; text-align: left; margin: 0;">Lorem, ipsum dolor sit amet
-								adipisicing elit. Doloribus, iste! corrupti labore maiores magnam ab
-								quod!</p>
+							<img src="assets/role/private-message.png" alt="just a test" style="margin: 0;">
+							<h5 style="font-size: 1.5rem; text-transform: uppercase; font-weight: bold; margin: 10px 0;text-align: left">Protection of Sensitive Data</h5>
+							<p style="font-size: 0.8rem; text-align: left; margin: 0;">
+								Networks often transmit and store sensitive information. Security ensures that this information is kept confidential and protected.
+						</p>
 						</div>
 
 						<div class="fragment fade-in"
 							style="height: 12.5rem; display: flex; flex-direction: column; align-items: flex-start; width: 12.5rem; justify-content: flex-start; column-gap: 0px;">
-							<img src="img/role/data-transformation.png" alt="just a test" style="margin: 0;">
-							<h5 style="font-size: 1.5rem; text-transform: uppercase; font-weight: bold; margin: 10px 0;">
-								Integrity</h5>
-							<p style="font-size: 0.8rem; text-align: left; margin: 0;">Lorem, ipsum dolor sit amet
-								adipisicing elit. Doloribus, iste! corrupti labore maiores magnam ab
-								quod!</p>
+							<img src="assets/role/data-transformation.png" alt="just a test" style="margin: 0;">
+							<h5
+								style="font-size: 1.5rem; text-transform: uppercase; font-weight: bold; margin: 10px 0; text-align: left">
+								Prevention of Unauthorized Access</h5>
+							<p style="font-size: 0.8rem; text-align: left; margin: 0;">Access control mechanisms help prevent unauthorized individuals or
+							systems from gaining entry.</p>
 						</div>
 
 						<div class="fragment fade-in"
 							style="height: 12.5rem; display: flex; flex-direction: column; align-items: flex-start; width: 12.5rem; justify-content: flex-start; column-gap: 0px;">
-							<img src="img/role/speed.png" alt="speed logo" style="margin: 0;">
-							<h5 style="font-size: 1.5rem; text-transform: uppercase; font-weight: bold; margin: 10px 0;">
-								Availability</h5>
-							<p style="font-size: 0.8rem; text-align: left; margin: 0;">Lorem, ipsum dolor sit amet
-								adipisicing elit. Doloribus, iste! corrupti labore maiores magnam ab
-								quod!</p>
+							<img src="assets/role/speed.png" alt="speed logo" style="margin: 0;">
+							<h5
+								style="font-size: 1.5rem; text-transform: uppercase; font-weight: bold; margin: 10px 0;text-align: left">
+								Mitigation of Cyber Threats</h5>
+							<p style="font-size: 0.8rem; text-align: left; margin: 0;">Networks are constant targets for a variety of cyber threats.Security mechanisms are essential for identifying and mitigating these threats to prevent potential damage.</p>
 						</div>
 
 						<div class="fragment fade-in"
 							style="height: 12.5rem; display: flex; flex-direction: column; align-items: flex-start; width: 12.5rem; justify-content: flex-start; column-gap: 0px;">
-							<img src="img/role/authentication.png" alt="just a test" style="margin: 0;">
-							<h5 style="font-size: 1.5rem; text-transform: uppercase; font-weight: bold; margin: 10px 0;">
-								Authentication</h5>
-							<p style="font-size: 0.8rem; text-align: left; margin: 0;">Lorem, ipsum dolor sit amet
-								adipisicing elit. Doloribus, iste! corrupti labore maiores magnam ab
-								quod!</p>
+							<img src="assets/role/authentication.png" alt="just a test" style="margin: 0;">
+							<h5
+								style="font-size: 1.5rem; text-transform: uppercase; font-weight: bold; margin: 10px 0;text-align: left">
+								Confidentiality and Privacy</h5>
+							<p style="font-size: 0.8rem; text-align: left; margin: 0;">Encryption and other security measures ensure the confidentiality and privacy of communications, building trust among
+							users and stakeholders.</p>
 						</div>
 
 						<div class="fragment fade-in"
 							style="height: 12.5rem; display: flex; flex-direction: column; align-items: flex-start; width: 12.5rem; justify-content: flex-start; column-gap: 0px;">
-							<img src="img/role/authorization.png" alt="just a test" style="margin: 0;">
-							<h5 style="font-size: 1.5rem; text-transform: uppercase; font-weight: bold; margin: 10px 0;">
-								Authorization</h5>
-							<p style="font-size: 0.8rem; text-align: left; margin: 0;">Lorem, ipsum dolor sit amet
-								adipisicing elit. Doloribus, iste! corrupti labore maiores magnam ab
-								quod!</p>
+							<img src="assets/role/authorization.png" alt="just a test" style="margin: 0;">
+							<h5
+								style="font-size: 1.5rem; text-transform: uppercase; font-weight: bold; margin: 10px 0;text-align: left">
+								Network Performance</h5>
+							<p style="font-size: 0.8rem; text-align: left; margin: 0;">A strong, secure network is the cornerstone of a healthy IT infrastructure. It’s what keeps your data safe from
+							attackers and ensures that all users have access to the resources they need.</p>
 						</div>
 
 						<div class="fragment fade-in"
 							style="height: 12.5rem; display: flex; flex-direction: column; align-items: flex-start; width: 12.5rem; justify-content: flex-start; column-gap: 0px;">
-							<img src="img/role/save-money.png" alt="just a test" style="margin: 0;">
-							<h5 style="font-size: 1.5rem; text-transform: uppercase; font-weight: bold; margin: 10px 0;">
-								Cost Savings</h5>
-							<p style="font-size: 0.8rem; text-align: left; margin: 0;">Lorem, ipsum dolor sit amet
-								adipisicing elit. Doloribus, iste! corrupti labore maiores magnam ab
-								quod!</p>
+							<img src="assets/role/save-money.png" alt="just a test" style="margin: 0;">
+							<h5
+								style="font-size: 1.5rem; text-transform: uppercase; font-weight: bold; margin: 10px 0;text-align: left">
+								Prevent Costly Data Breaches</h5>
+							<p style="font-size: 0.8rem; text-align: left; margin: 0;">A data breach occurs when data is stolen or accessed by an unauthorised user.The cost of data breaches is staggering; according to IBM, the average cost of a data breach in Australia is $4.1
+							million.</p>
 						</div>
 					</div>
 					<div class="footer">
@@ -243,11 +248,144 @@
 				</div>
 			</section>
 
+			<!-- seventh page: Network vulnerabilities -->
+			<section>
+				<section id="vulnerabilities" class="simple" data-background-color="#14084a">
+					<div class="container-container">
+						<h3 id="page-title" style="margin-bottom: 1rem;"><i class="arrow right"></i>Network
+							vulnerabilities</h3>
+						<div id="container"
+							style="display: flex; justify-content: space-around; align-items: flex-end; row-gap: 100px;">
+							<div style="margin-right: 20px;" class="fragment fade-in">
+								<h4 style="color: #07ace7;">Malwares</h4>
+								<ul>
+									<li style="font-size: 1.4rem;">Are malicious software use to exploit network
+										vulnerabilities.</li>
+									<li style="font-size: 1.4rem;"">in 2018 the number of infected devices raised reaching <span class="
+										stand-out">812.67 million infected devices</span></li>
+									<li style="font-size: 1.4rem;"">The most common types of malware are: viruses, keyloggers, worms, trojaners, ransomware, botnets, etc..</li>
+								</ul>
+								<img src=" assets/malware.png" alt="evolution of malware" width="500px">
+							</div>
+							<span style="border-left: 3px solid #07ace7;height: inherit;"></span>
+							<div style="margin-left: 20px;" class="fragment fade-in">
+								<h4 style="color: #07ace7;">Phishing Attacks</h4>
+								<ul>
+									<li style="font-size: 1.4rem;">refers to an attempt to steal sensitive information
+										or important data by pretending to be a trustworthy entity in order to sell or
+										utilize them.</li>
+									<li style="font-size: 1.4rem;"">The most common vectors of Phishing:
+									<ol>
+										<li>Advanced-fee scam</li>
+										<li>Account deactivation scam</li>
+										<li>Website forgery scam</li>
+									</ol>
+								</li>
+								</ul>
+							</div>
+						</div>
+						<div class=" footer">
+										<span>Hochschule Bremerhaven</span>
+										<span>|</span>
+										<span>Siani Lucien</span>
+										<span>|</span>
+										<span>31.01.2023</span>
+							</div>
+						</div>
+				</section>
+
+				<!-- second part -->
+				<section id="vulnerabilities" class="simple" data-background-color="#14084a">
+					<div class="container-container">
+						<h3 id="page-title" style="margin-bottom: 1rem;"><i class="arrow right"></i>Mechanisms for
+							Network
+							Security</h3>
+						<div id="container"
+							style="display: flex; justify-content: space-around; align-items: flex-end; row-gap: 100px;">
+							<div style="margin-right: 20px;" class="fragment fade-in">
+								<h4 style="color: #07ace7;">Outdated Or Unpatched Software</h4>
+								<ul>
+									<li style="font-size: 1.4rem;">Outdated software is one of the most common but also
+										one of the easiest to exploit.
+									</li>
+									<li style="font-size: 1.4rem;"">Updates help to improve security, fix bugs and address security weaknesses</li>
+										<li style=" font-size: 1.4rem;"">Therefore big companies like Appel, Microsoft and Google release patches on
+										a daily basis to prevent vulnerabilities.</li>
+								</ul>
+							</div>
+							<span style="border-left: 3px solid #07ace7;height: inherit;"></span>
+							<div style="margin-left: 20px;" class="fragment fade-in">
+								<h4 style="color: #07ace7;">Weak Password and Single-Factor Authentication</h4>
+								<ul>
+									<li style="font-size: 1.4rem;">Using a weak password in a network make it easy for
+										an attacker to brute-force it which compromises the network</li>
+									<li style="font-size: 1.4rem;">A good password should be at least 8 characters long,
+										but the longer it is, the harder it is for it to be cracked</li>
+									<li style="font-size: 1.4rem;">SFA also makes it easy for hackers to penetrate into
+										a
+										network</li>
+									<li style="font-size: 1.4rem;">It is recommend to add 2FA or MFA alongside a
+										password to increase the security of the </li>
+								</ul>
+							</div>
+						</div>
+						<div class=" footer">
+							<span>Hochschule Bremerhaven</span>
+							<span>|</span>
+							<span>Siani Lucien</span>
+							<span>|</span>
+							<span>31.01.2023</span>
+						</div>
+					</div>
+				</section>
+
+				<!--  third part -->
+				<section id="vulnerabilities" class="simple" data-background-color="#14084a">
+					<div class="container-container">
+						<h3 id="page-title" style="margin-bottom: 1rem;"><i class="arrow right"></i>Mechanisms for
+							Network
+							Security</h3>
+						<div id="container"
+							style="display: flex; justify-content: space-around; align-items: flex-end; row-gap: 100px;">
+							<div style="margin-right: 20px;" class="fragment fade-in">
+								<h4 style="color: #07ace7;">Misconfigured Firewalls</h4>
+								<ul>
+									<li style="font-size: 1.4rem;">Exposing the internal network or servers to the
+										internet a big threat.</li>
+									<li style="font-size: 1.4rem;"">attackers are easily able to spy on your traffic, steal data, or compromise your network.</li>
+									<li style=" font-size: 1.4rem;"">It is important for the network administrator to create rules for incoming or
+										ongoing networks communications.</li>
+								</ul>
+								<img src="assets/firewall-map.png" alt="firewall rules" height="200px">
+							</div>
+							<span style="border-left: 3px solid #07ace7;height: inherit;"></span>
+							<div style="margin-left: 20px; width: 500px;" class="fragment fade-in">
+								<h4 style="color: #07ace7;">Others weaknesses / vulnerabilities</h4>
+								<ul>
+									<li style="font-size: 1.4rem; width: 200rem;">Insufficient Network Monitoring.</li>
+									<li style="font-size: 1.4rem;">Inadequate Access Controls.</li>
+									<li style="font-size: 1.4rem;">Unsecured Wireless Networks.</li>
+									<li style="font-size: 1.4rem;">etc... </li>
+								</ul>
+							</div>
+						</div>
+						<div class=" footer">
+							<span>Hochschule Bremerhaven</span>
+							<span>|</span>
+							<span>Siani Lucien</span>
+							<span>|</span>
+							<span>31.01.2023</span>
+						</div>
+					</div>
+				</section>
+			</section>
+
 
 			<!-- seventh page: mechanism of protection -->
 			<section id="mechanisms" class="simple" data-background-color="#14084a">
 				<div class="container-container">
-					<h3 id="page-title" style="margin: 0;"><i class="arrow right"></i>Mechanisms for Network Security</h3>
+					<h3 id="page-title" style="margin: 0;"><i class="arrow right"></i>Mechanisms for Network Security
+					</h3>
 					<div id="container">
 					</div>
 					<div class="footer">
@@ -263,10 +401,11 @@
 			<!-- eighth page: Home Network Sample -->
 			<section id="home-network" class="simple" data-background-color="#14084a">
 				<div class="container-container">
-					<h3 id="page-title" style="margin: 0;"><i class="arrow right"></i>Securing Your Haven: Examples of Home Network Security</h3>
+					<h3 id="page-title" style="margin: 0;"><i class="arrow right"></i>Securing Your Haven: Examples of
+						Home Network Security</h3>
 					<div id="container" style="flex-direction: column;">
-						<img src="img/home-network.png" alt="example of protection for home network">
-						<span style="font-size: large;">Home Network Diagram</span>
+						<img src="assets/homelab.png" alt="example of protection for home network" width="710px"
+							height="508px">
 					</div>
 					<div class="footer">
 						<span>Hochschule Bremerhaven</span>
@@ -284,12 +423,36 @@
 					<h3 id="page-title" style="margin: 0;"><i class="arrow right"></i>Bibliography</h3>
 					<div id="container">
 						<ul style="list-style: square;">
-							<li><a style="font-size: xx-large;" href="https://explodingtopics.com/blog/data-generated-per-day">https://explodingtopics.com/blog/data-generated-per-day</a></li>
-							<li><a style="font-size: xx-large;" href="https://explodingtopics.com/blog/data-generated-per-day">https://explodingtopics.com/blog/data-generated-per-day</a></li>
-							<li><a style="font-size: xx-large;" href="https://explodingtopics.com/blog/data-generated-per-day">https://explodingtopics.com/blog/data-generated-per-day</a></li>
-							<li><a style="font-size: xx-large;" href="https://explodingtopics.com/blog/data-generated-per-day">https://explodingtopics.com/blog/data-generated-per-day</a></li>
-							<li><a style="font-size: xx-large;" href="https://explodingtopics.com/blog/data-generated-per-day">https://explodingtopics.com/blog/data-generated-per-day</a></li>
-							<li><a style="font-size: xx-large;" href="https://explodingtopics.com/blog/data-generated-per-day">https://explodingtopics.com/blog/data-generated-per-day</a></li>
+							<li style=""><a style="font-size: 1.55rem; color: #07ace7;"
+									href="https://explodingtopics.com/blog/data-generated-per-day">https://explodingtopics.com/blog/data-generated-per-day</a>
+							</li>
+							<li style=""><a style="font-size: 1.55rem; color: #07ace7;"
+									href="https://purplesec.us/common-network-vulnerabilities/">https://purplesec.us/common-network-vulnerabilities/</a>
+							</li>
+							<li style=""><a style="font-size: 1.55rem; color: #07ace7;"
+									href="https://www.netgainit.com/blogs/network-security-threats-and-vulnerabilities/">https://www.netgainit.com/blogs/network-security-threats-and-vulnerabilities/</a>
+							</li>
+							<li style=""><a style="font-size: 1.55rem; color: #07ace7;"
+									href="https://www.vumetric.com/blog/10-most-common-network-vulnerabilities/">https://www.vumetric.com/blog/10-most-common-network-vulnerabilities/</a>
+							</li>
+							<li style=""><a style="font-size: 1.55rem; color: #07ace7;"
+									href="https://www.geeksforgeeks.org/types-of-security-mechanism/">https://www.geeksforgeeks.org/types-of-security-mechanism/</a>
+							</li>
+							<li style=""><a style="font-size: 1.55rem; color: #07ace7;"
+									href="https://www.ciscopress.com/articles/article.asp?p=1626588&seqNum=2">https://www.ciscopress.com/articles/article.asp?p=1626588&seqNum=2</a>
+							</li>
+							<li style="">
+								<a style="font-size: 1.55rem; color: #07ace7;"
+									href="https://www.executech.com/insights/why-is-network-security-important/">https://www.executech.com/insights/why-is-network-security-important/</a>
+							</li>
+							<li style="">
+								<a style="font-size: 1.55rem; color: #07ace7;"
+									href="https://www.lucidchart.com/blog/network-security-basics-and-benefits">https://www.lucidchart.com/blog/network-security-basics-and-benefits</a>
+							</li>
+							<li style="">
+								<a style="font-size: 1.55rem; color: #07ace7;"
+									href="https://www.essentialtech.com.au/blog/network-security-why-you-should-care-about-it">https://www.essentialtech.com.au/blog/network-security-why-you-should-care-about-it</a>
+							</li>
 						</ul>
 					</div>
 					<div class="footer">
@@ -305,33 +468,33 @@
 
 			<!-- thanks page -->
 			<section id="thanks" class="" data-background-color="#14084a">
-					<h2 style="text-align: left; text-transform: uppercase;font: 900;"><i class="arrow-end"></i>THANKS!</h2>
-					<div id="container" style="flex-direction: column; align-items: flex-start;">
-						<p style="font-size: large; margin: 0;">Do you have any questions?</p>
-						<p style="font-size: large; margin: 0;">lucien@fanto.dev</p>
-						<p style="font-size: large; margin: 0;">https://fanto.dev</p>
+				<h2 style="text-align: left; text-transform: uppercase;font: 900;"><i class="arrow-end"></i>THANKS!</h2>
+				<div id="container" style="flex-direction: column; align-items: flex-start;">
+					<p style="font-size: large; margin: 0;">Do you have any questions?</p>
+					<p style="font-size: large; margin: 0;">lucien@fanto.dev</p>
+					<p style="font-size: large; margin: 0;">https://fanto.dev</p>
 
-					</div>
 				</div>
-			</section>
-
-			<!-- template for each section -->
-			<section id="#" class="simple" data-background-color="#14084a">
-				<div class="container-container">
-					<h3 id="page-title" style="margin: 0;"><i class="arrow right"></i>Tablet of content</h3>
-					<div id="container">
-					</div>
-					<div class="footer">
-						<span>Hochschule Bremerhaven</span>
-						<span>|</span>
-						<span>Siani Lucien</span>
-						<span>|</span>
-						<span>31.01.2023</span>
-					</div>
-				</div>
-			</section>
-
 		</div>
+		</section>
+
+		<!-- template for each section -->
+		<section id="#" class="simple" data-background-color="#14084a">
+			<div class="container-container">
+				<h3 id="page-title" style="margin: 0;"><i class="arrow right"></i>Tablet of content</h3>
+				<div id="container">
+				</div>
+				<div class="footer">
+					<span>Hochschule Bremerhaven</span>
+					<span>|</span>
+					<span>Siani Lucien</span>
+					<span>|</span>
+					<span>31.01.2023</span>
+				</div>
+			</div>
+		</section>
+
+	</div>
 	</div>
 
 	<script src=" dist/reveal.js">
