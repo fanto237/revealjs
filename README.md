@@ -19,11 +19,8 @@ For the creation of the presentation slides for courses 3 and 9 of _Tertia TQ2_.
 ```
 root/
 ├── assets/
-│   ├── images/
-│        ├── 3
-│        ├── 9
 ├── README.md
-└── template.html
+└── index.html
 ```
 
 - `assets/`: for storing assets such as images used in slides
