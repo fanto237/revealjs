@@ -1,154 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>IT Sec: Network Security</title>
+	<meta charset="utf-8" />
+	<title>Title</title>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="hier title hinzufügen" />
+	<meta name="author" content="Lucien Siani" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css" />
+	<link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme" />
+	<link rel="stylesheet" href="https://unpkg.com/reveal.js/plugin/highlight/monokai.css" />
+	<style>
+		.title {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.author {
+			font-size: 2rem;
+			border-top: 0.4rem solid;
+			border-bottom: 0.4rem solid;
+			border-color: #07ace7;
+			width: 100vw;
+			text-align: center;
+			padding: 0.8rem 0;
+			font-size: 3rem;
+			margin: 3rem 0;
+		}
+
+		.presentator {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			font-size: 2rem;
+		}
+
+		.end-author {
+			font-style: italic;
+			text-align: center;
+		}
+
+		.page-title {
+			font-size: 3rem;
+			text-align: center;
+			text-decoration: underline;
+		}
+
+		#question {
+			color: #e83c89;
+			font-weight: bold;
+		}
+
+		#antwort {
+			color: #07ace7;
+			font-weight: bold;
+		}
 
 
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/theme/simple.css">
 
+		.fragment.blur {
+			filter: blur(10px);
+		}
 
-	<!-- add icon to the presentation -->
-	<link rel="icon" href="assets/adesso/adesso-logo.jpg">
+		.fragment.blur.visible {
+			filter: none;
+		}
 
+		.fragment.box {
+			background-color: #69639c;
+		}
 
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
-		rel="stylesheet">
+		.fragment.box.visible {
+			background-color: #07ace7;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+		}
+
+		td,
+		tr {
+			font-size: 1rem;
+		}
+
+		li {
+			font-size: 2rem;
+		}
+	</style>
 </head>
 
 <body>
 	<div class="reveal">
-		<div class="slides" style="width: 1200px;">
-			<!-- first page: themen -->
-			<section id="themen" class="simple" data-background-color="#14084a">
-				<div class="container-container">
-					<h3 id="page-title" style="margin: 0;"><i class="arrow right"></i>Themen: </h3>
-					<div id="container" style="flex-direction: column; justify-content: center; gap: 2rem;">
-						<ol>
-							<li style="font-size: 2rem;">Beurteilung von Datenbank-Replikationen im Rahmen eines
-								Fail Overs Szenario
-								(Architektur)</li>
-							<li style="font-size: 2rem;">Kubernetes Architektur (Cloud)</li>
-							<li style="font-size: 2rem;">Ablösung einer bestehenden Provisionierungslösung durch
-								Ansible(Continous Delivery)
-							</li>
-							<li style="font-size: 2rem;">Umgang mit Datenbank in einem Continuous Delivery
-								Umfeld(Continous Delivery)</li>
-							<li style="font-size: 2rem;">Entwurf und Implementierung einer IoT Software Architektur
-								auf Basis der Bosch IoT
-								Cloud(Internet of Things)</li>
-						</ol>
-						<p>Quelle: <a class="stand-out"
-								href="https://o365adessogroup.sharepoint.com/sites/GIT_extranet-adesso-studi-portal/default.aspx">Adesso
-								Offene
-								Themen</a></p>
-					</div>
-
-					<div class="footer">
-						<span>Adesso SE</span>
-						<span>|</span>
-						<span>Siani Lucien</span>
-						<span>|</span>
-						<span>05.03.2024</span>
-					</div>
-			</section>
-
-			<!-- second page: thema-one  -->
-			<section id="thema-first" class="simple" data-background-color="#14084a">
-				<div class="container-container">
-					<h3 id="page-title" style="margin: 0; text-align: center;"><i class="arrow right"></i>Thema:
-						Beurteilung von Datenbank-Replikationen im Rahmen eines Fail Overs Szenario</h3>
-					<div id="container" style="flex-direction: column;">
-						<h5 style="margin-top: 2rem;">Ansprechpartner: <span class="stand-out">Paul Ziemann</span></h5>
-						<p> <span class="stand-out">Erklärung:</span> Hier geht es darum verschiedenen
-							Datenbank-Replikationen Tools wie Slony und Pgpool und Replikationsmethoden zu vergleichen
-							und einen konkreten Vorschlag zur Implementierung zu machen</p>
-					</div>
-					<div class="footer">
-						<span>Adesso SE</span>
-						<span>|</span>
-						<span>Siani Lucien</span>
-						<span>|</span>
-						<span>05.03.2024</span>
-					</div>
+		<div class="slides">
+			<!-- first page -->
+			<section id="deck" class="title">
+				<div class="title">
+					<h3>Fachinformatiker*in für Systemintegration</h3>
+					<span class="author">Lernfeld 3: Clients in Netzwerke einbinden</span>
+					</span>
+					<p id="datetime" class="end-author"></p> <span class="end-author"> von Lucien Siani</span>
 				</div>
 			</section>
 
-			<!-- third page: thema-second  -->
-			<section id="thema-second" class="simple" data-background-color="#14084a">
-				<div class="container-container">
-					<h3 id="page-title" style="margin: 0; text-align: center;"><i class="arrow right"></i>Thema:
-						Kubernetes Architektur</h3>
-					<div id="container" style="flex-direction: column;">
-						<h5 style="margin-top: 2rem;">Ansprechpartner: <span class="stand-out">Andreas Hartmann</span></h5>
-
-						<p> <span class="stand-out">Erklärung:</span> Praktische Anwendung der konzeptionellen Grundlagen von Kubernetes sowie Diskussion darüber, wie Kubernetes in der Praxis für verteilte Systeme eingesetzt wird.</p>
-						<p> <span class="stand-out">Umsetzung:</span> Entwicklung eines Prototyps, der die Bereitstellung von Containern, Skalierung und Aktualisierungen auf der Grundlage
-						von Kubernetes-Konzepten demonstriert.</p>
-					</div>
-					<div class="footer">
-						<span>Adesso SE</span>
-						<span>|</span>
-						<span>Siani Lucien</span>
-						<span>|</span>
-						<span>05.03.2024</span>
-					</div>
-				</div>
-			</section>
-
-			<!-- fourth page: thema-third  -->
-			<section id="thema-third" class="simple" data-background-color="#14084a">
-				<div class="container-container">
-					<h3 id="page-title" style="margin: 0; text-align: center;"><i class="arrow right"></i>Thema:
-						Ablösung einer bestehenden Provisionierungslösung durch Ansible</h3>
-					<div id="container" style="flex-direction: column;">
-						<h5 style="margin-top: 2rem;">Ansprechpartner: <span class="stand-out">Jens Kostka</span></h5>
-						<p> <span class="stand-out">Erklärung:</span> Hier geht es den Vergleich von Chef und Ansible</p>
-						<p> <span class="stand-out">Umsetzung:</span> - Analyse von Chef-Konfiguration und -Skripte.
-						- Entwicklung entsprechender Ansible-Playbooks.
-						- Schrittweise Migration mit minimaler Ausfallzeit.</p>
-					</div>
-					<div class="footer">
-						<span>Adesso SE</span>
-						<span>|</span>
-						<span>Siani Lucien</span>
-						<span>|</span>
-						<span>05.03.2024</span>
-					</div>
-				</div>
-			</section>
-
-			<!-- thanks page -->
-			<section id="thanks" class="" data-background-color="#14084a">
-				<h2 style="text-align: left; text-transform: uppercase;font: 900;"><i class="arrow-end"></i>Danke für die Aufmersamkeit!</h2>
-				<div id="container" style="flex-direction: column; align-items: flex-start;">
-					<p style="font-size: large; margin: 0;">Gibt es noch Fragen?</p>
-
-				</div>
-				</div>
-			</section>
-
-
-
+			<section>lets go... bro</section>
+			<section>lets go...</section>
 		</div>
 	</div>
 
-	<script src=" dist/reveal.js">
+
+	<!-- script for the reveal.js -->
+
+	<script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+	<script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
+	<script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
+	<script src="https://unpkg.com/reveal.js/plugin/math/math.js"></script>
+	<script src="https://unpkg.com/reveal.js/plugin/notes/notes.js"></script>
+	<script src="https://unpkg.com/reveal.js/plugin/zoom/zoom.js"></script>
+	<script src="https://unpkg.com/reveal.js/plugin/search/search.js"></script>
+	<script>
+		n = new Date();
+		y = n.getFullYear();
+		m = n.getMonth() + 1;
+		d = n.getDate();
+		document.getElementById("datetime").innerHTML = `Am:  ${d}/${m}/${y}`
 	</script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
 	<script>
 		Reveal.initialize({
 			hash: true,
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+			transition: "fade", // Sanfte Übergänge
+			controls: true, // Steuerungen aktivieren
+			progress: true, // Fortschrittsbalken anzeigen
+			history: true, // Browser-History aktivieren
+			center: true, // Zentriert den Inhalt vertikal
+			slideNumber: true, //
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [
+				RevealZoom,
+				RevealNotes,
+				RevealSearch,
+				RevealMarkdown,
+				RevealHighlight,
+			],
 		});
 	</script>
 </body>
